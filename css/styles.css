@@ -1,0 +1,255 @@
+:root{
+    --color-primary: #f1c40f;
+    --color-white: #fff;
+    --color-gray: #eeeeee;
+    --color-dark: #2c3e50;
+    --padding-1: 1rem;
+    --padding-2: 2rem;
+    --primary-font: 'Raleway', sans-serif;
+    
+
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--color-gray);
+}
+
+/* Global styles */
+
+img{
+    max-width: 100%;
+}
+
+p{
+    line-height: 1.8;
+    font-size: 1.6rem;
+}
+
+h1, h2, h3, h4{
+    margin: 2rem 0;
+
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2.2rem;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+.btn{
+    background-color: var(--color-primary);
+    padding: var(--padding-1);
+    color: var(--color-dark);
+    text-transform: uppercase;
+    cursor: pointer;
+    display: block;
+
+    font-weight: 700;
+    border: none;
+}
+
+.btn:hover{
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    transition: all .4s ease;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container{
+    max-width: 110rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* Header */
+
+.main-header{
+    padding:  var(--padding-1);
+    background-color: var(--color-dark);
+}
+
+.topbar{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 3.2rem;
+}
+
+.main-navbar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-row-gap: 1rem;
+}
+
+@media (min-width: 76.8rem){
+
+    .topbar{
+          grid-template-rows: unset;
+          grid-row-gap: unset;
+          grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo {
+        grid-column: 1 / 2;
+    }
+
+    .main-navbar{
+          grid-column: 2 / 3;
+          grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+          align-items: center;
+    }
+
+}
+
+.main-navbar__link{
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.search-form-container{
+    background-image: url("../img/search-background.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 4rem 0;
+}
+
+.search-form-content{
+    height: 20rem;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 1rem;
+    align-items: center;
+}
+
+.search-form-content input[type="text"],
+.search-form-content select {
+    padding: var(--padding-1);
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     border: none;
+}
+
+
+@media (min-width: 76.8rem){
+    .search-form-content{
+        grid-template-rows: unset;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1.6rem;
+    }
+}
+
+.properties-list {
+    display: grid;
+    grid-gap: 1rem;
+}
+@media (min-width:768px) {
+    .properties-list {
+         grid-template-columns: repeat(4, 1fr);
+         grid-template-rows: repeat(2, auto);
+    }
+    .featured {
+         grid-row: 1 / 2;
+    }
+    .first {
+         grid-column: 1 / 3;
+    }
+    .second {
+         grid-column: 3 / 5;
+    }
+
+    .prop-image {
+    max-width: 100%;
+    height: 20rem;
+    display: block;
+}
+}
+
+
+
+.card {
+    background-color: var(--color-white);
+    padding: var(--padding-1);
+    border: 1px solid var(--color-gray);
+}
+
+.price span{
+    color: var(--color-primary);
+}
+
+.about-us{
+    margin-top: 2rem;
+
+}
+
+
+@media (min-width: 76.8rem){
+    .about-us{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
+
+    .about-us-content{
+        text-align: left;
+    }
+}
+
+.about-us-content{
+    text-align: center;
+}
+
+.main-footer{
+    background-color: var(--color-primary);
+    padding-top: var(--padding-2);
+    margin-top: var(--padding-2);
+    color: var(--color-white);
+}
+
+@media (min-width: 76.8rem){
+    .main-footer .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: var(--padding-2);
+    }
+}
+
+.second-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.second-navbar a{
+    color: var(--color-dark);
+    text-decoration: none;
+    font-size: 1.8rem;
+
+}
+
+
+.about-us-content{
+    margin-bottom: 1rem;
+}
