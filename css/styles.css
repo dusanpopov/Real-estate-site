@@ -60,7 +60,6 @@ h3{
     text-transform: uppercase;
     cursor: pointer;
     display: block;
-
     font-weight: 700;
     border: none;
 }
@@ -69,6 +68,10 @@ h3{
     background-color: var(--color-dark);
     color: var(--color-primary);
     transition: all .4s ease;
+}
+
+.btn-info{
+    font-size: 1.6rem;
 }
 
 .text-center{
@@ -227,6 +230,12 @@ h3{
     color: var(--color-white);
 }
 
+
+.widget{
+    padding: 1.6rem;
+}
+
+
 @media (min-width: 76.8rem){
     .main-footer .container{
         display: grid;
@@ -234,6 +243,7 @@ h3{
         grid-column-gap: var(--padding-2);
     }
 }
+
 
 .second-navbar{
     display: flex;
