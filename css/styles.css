@@ -67,7 +67,7 @@ h3{
 .btn:hover{
     background-color: var(--color-dark);
     color: var(--color-primary);
-    transition: all .4s ease;
+    transition: all .5s ease;
 }
 
 .btn-info{
