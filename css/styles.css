@@ -225,7 +225,6 @@ h3{
     color: var(--color-white);
 }
 
-
 .widget{
     padding: 1.6rem;
 }
@@ -238,7 +237,6 @@ h3{
         grid-column-gap: var(--padding-2);
     }
 }
-
 
 .second-navbar{
     display: flex;
