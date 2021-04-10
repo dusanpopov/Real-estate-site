@@ -205,7 +205,7 @@ h3{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
-    }
+}
 
     .about-us-content{
         text-align: left;
@@ -240,7 +240,6 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .second-navbar a{
