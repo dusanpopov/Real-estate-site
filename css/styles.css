@@ -101,7 +101,6 @@ h3{
 }
 
 @media (min-width: 76.8rem){
-
     .topbar{
           grid-template-rows: unset;
           grid-row-gap: unset;
