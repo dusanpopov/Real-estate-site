@@ -205,7 +205,6 @@ h3{
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
 }
-
     .about-us-content{
         text-align: left;
     }
