@@ -109,7 +109,6 @@ h3{
     .logo {
         grid-column: 1 / 2;
     }
-
     .main-navbar{
           grid-column: 2 / 3;
           grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
