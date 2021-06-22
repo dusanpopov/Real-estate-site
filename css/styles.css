@@ -106,7 +106,6 @@ h3{
           grid-row-gap: unset;
           grid-template-columns: repeat(2, 1fr);
     }
-
     .logo {
         grid-column: 1 / 2;
     }
